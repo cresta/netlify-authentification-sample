@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(
   sessions({
     cookieName: "session",
-    secret: process.env.SESSION_SECRET,
+    secret: "foobar-random-secret",
     cookie: {
       ephemeral: false,
       secure: false
